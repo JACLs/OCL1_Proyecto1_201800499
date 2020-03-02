@@ -53,7 +53,8 @@
             this.guardarToolStripMenuItem});
             this.menuPrincipal.Location = new System.Drawing.Point(0, 0);
             this.menuPrincipal.Name = "menuPrincipal";
-            this.menuPrincipal.Size = new System.Drawing.Size(1469, 28);
+            this.menuPrincipal.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuPrincipal.Size = new System.Drawing.Size(1102, 24);
             this.menuPrincipal.TabIndex = 1;
             // 
             // abrirToolStripMenuItem
@@ -63,14 +64,14 @@
             this.saveToolStripMenuItem,
             this.newTabToolStripMenuItem});
             this.abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
-            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(44, 24);
+            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.abrirToolStripMenuItem.Text = "File";
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Image = global::OCL1_Proyecto1_201800499.Properties.Resources.Open_256;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
@@ -78,7 +79,7 @@
             // 
             this.saveToolStripMenuItem.Image = global::OCL1_Proyecto1_201800499.Properties.Resources.Save_256;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
@@ -86,7 +87,7 @@
             // 
             this.newTabToolStripMenuItem.Image = global::OCL1_Proyecto1_201800499.Properties.Resources.AddTab_256;
             this.newTabToolStripMenuItem.Name = "newTabToolStripMenuItem";
-            this.newTabToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.newTabToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.newTabToolStripMenuItem.Text = "New Tab";
             this.newTabToolStripMenuItem.Click += new System.EventHandler(this.newTabToolStripMenuItem_Click);
             // 
@@ -96,47 +97,50 @@
             this.tokensToolStripMenuItem,
             this.errorsToolStripMenuItem});
             this.guardarToolStripMenuItem.Name = "guardarToolStripMenuItem";
-            this.guardarToolStripMenuItem.Size = new System.Drawing.Size(77, 24);
+            this.guardarToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
             this.guardarToolStripMenuItem.Text = "Compile";
             // 
             // tokensToolStripMenuItem
             // 
             this.tokensToolStripMenuItem.Image = global::OCL1_Proyecto1_201800499.Properties.Resources.Ticket_256;
             this.tokensToolStripMenuItem.Name = "tokensToolStripMenuItem";
-            this.tokensToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.tokensToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
             this.tokensToolStripMenuItem.Text = "Tokens";
             // 
             // errorsToolStripMenuItem
             // 
             this.errorsToolStripMenuItem.Image = global::OCL1_Proyecto1_201800499.Properties.Resources.Error_256;
             this.errorsToolStripMenuItem.Name = "errorsToolStripMenuItem";
-            this.errorsToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.errorsToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
             this.errorsToolStripMenuItem.Text = "Errors";
             // 
             // controlTabs
             // 
-            this.controlTabs.Location = new System.Drawing.Point(12, 31);
+            this.controlTabs.Location = new System.Drawing.Point(9, 25);
+            this.controlTabs.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.controlTabs.Name = "controlTabs";
             this.controlTabs.SelectedIndex = 0;
-            this.controlTabs.Size = new System.Drawing.Size(469, 613);
+            this.controlTabs.Size = new System.Drawing.Size(352, 498);
             this.controlTabs.TabIndex = 0;
             // 
             // rtbConsole
             // 
             this.rtbConsole.BackColor = System.Drawing.Color.Gray;
             this.rtbConsole.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.rtbConsole.Location = new System.Drawing.Point(13, 704);
+            this.rtbConsole.Location = new System.Drawing.Point(10, 572);
+            this.rtbConsole.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rtbConsole.Name = "rtbConsole";
-            this.rtbConsole.Size = new System.Drawing.Size(468, 163);
+            this.rtbConsole.Size = new System.Drawing.Size(352, 133);
             this.rtbConsole.TabIndex = 2;
             this.rtbConsole.Text = "";
             // 
             // lblConsole
             // 
             this.lblConsole.AutoSize = true;
-            this.lblConsole.Location = new System.Drawing.Point(13, 681);
+            this.lblConsole.Location = new System.Drawing.Point(10, 553);
+            this.lblConsole.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblConsole.Name = "lblConsole";
-            this.lblConsole.Size = new System.Drawing.Size(59, 17);
+            this.lblConsole.Size = new System.Drawing.Size(45, 13);
             this.lblConsole.TabIndex = 3;
             this.lblConsole.Text = "Console";
             // 
@@ -156,15 +160,16 @@
             // 
             // VentanaPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1469, 879);
+            this.ClientSize = new System.Drawing.Size(1102, 728);
             this.Controls.Add(this.lblConsole);
             this.Controls.Add(this.rtbConsole);
             this.Controls.Add(this.controlTabs);
             this.Controls.Add(this.menuPrincipal);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuPrincipal;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "VentanaPrincipal";
             this.Text = "Proyecto1_201800499";
             this.menuPrincipal.ResumeLayout(false);
